@@ -1,0 +1,98 @@
+/* CSS reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clase fixed-width container que se "autocentrará" a sí misma */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Boton */
+.btn {
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px;
+}
+
+/* Boton ocn transicion */
+.effect.effect-5 {
+    transition: all 0.2s linear 0s;
+
+    &:before {
+        content: "\f054";
+        font-family: FontAwesome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 30px;
+        background-color: rgba($overlay-color, 0.3);
+        border-radius: 0 50% 50% 0;
+        transform: scale(0, 1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
+    }
+
+    &:hover {
+        text-indent: 30px;
+
+        &:before {
+            transform: scale(1, 1);
+            text-indent: 0;
+        }
+    }
+}
+
+/* Copiados desde "Columnas Flex-Ibles" */
+.row{
+    display: flex;
+
+}
+
+.col{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: goldenrod;
+}
+
+/* Copiado de Barra de navegacion con flex */
+
+.nav {
+    background-color: #5b5656;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 10px 20px;
+}
+
+.nav-title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+    line-height: 3;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
